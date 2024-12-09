@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Pinjaman</title>
+    <link rel="stylesheet" href="../css/kurstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulasi Pinjaman</h1>
+        <form id="loanForm">
+            <label for="amount">Nominal Pinjaman (Rp):</label>
+            <input type="number" id="amount" name="amount" min="10000000" required>
+            
+            <label for="years">Jangka Waktu Pinjaman (tahun):</label>
+            <select id="years" name="years">
+                <option value="1">1 Tahun</option>
+                <option value="2">2 Tahun</option>
+                <option value="3">3 Tahun</option>
+                <option value="4">4 Tahun</option>
+                <option value="5">5 Tahun</option>
+            </select>
+            
+            <button type="submit">Hitung Simulasi</button>
+        </form>
+
+        <h2>Hasil Simulasi</h2>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Tanggal Mulai</th>
+                    <th>Tanggal Jatuh Tempo</th>
+                    <th>Angsuran Pokok (Rp)</th>
+                    <th>Angsuran Bunga (Rp)</th>
+                    <th>Total Angsuran (Rp)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <script src="../js/kurscript.js"></script>
+</body>
+</html>

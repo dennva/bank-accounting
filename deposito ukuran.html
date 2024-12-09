@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Deposito</title>
+    <link rel="stylesheet" href="../css/depositostyle.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Deposito</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Hitung Deposito Anda</h2>
+            <form id="depositForm">
+                <label for="amount">Nominal Deposito (Rp):</label>
+                <input type="number" id="amount" required placeholder="Masukkan jumlah deposito">
+                
+                <label for="rate">Bunga Tahunan (%):</label>
+                <input type="number" id="rate" required placeholder="Masukkan suku bunga tahunan">
+                
+                <label for="time">Jangka Waktu:</label>
+                <select id="time">
+                    <option value="3">3 Bulan</option>
+                    <option value="6">6 Bulan</option>
+                    <option value="12">12 Bulan</option>
+                    <option value="24">24 Bulan</option>
+                </select>
+                
+                <button type="button" onclick="calculate()">Hitung</button>
+            </form>
+        </section>
+        <section class="result-section">
+            <h2>Hasil Perhitungan</h2>
+            <p id="result">Silakan masukkan data untuk melihat hasil.</p>
+        </section>
+    </main>
+    <footer>
+        <p> 2024 Bank X. Kemudahan Segala Transaksi Anda.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

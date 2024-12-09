@@ -1,0 +1,139 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Warna putih kebiruan */
+    color: #2c3e50; /* Warna teks */
+}
+
+/* Header */
+header {
+    background-color: #0055ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+.form-section, .result-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border: 2px solid #80a9fc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Input dan Select */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0357ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #004cff;
+}
+
+/* Result Section */
+.result-section h2 {
+    text-align: center;
+}
+
+.result-section p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #0558ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10vh;
+}
+/* Style untuk dropdown (select) */
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #2c3e50;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animasi untuk hover */
+}
+
+/* Hover efek pada select dropdown */
+form select:hover {
+    background-color: #0659ff;
+    color: white;
+    border: 1px solid #064cf0;
+}
+
+/* Style untuk opsi di dalam dropdown */
+form select option {
+    padding: 10px;
+    background-color: white;
+    color: #2c3e50;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover efek pada setiap opsi */
+form select option:hover {
+    background-color: #0044cc;
+    color: white;
+   
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ffffff, #89f1ff, #656566);
+    /* 
+        #ffffff   : Putih (awal)
+        #89f1ff   : Biru muda (tengah)
+        #0044cc   : Biru tua (akhir)
+    */
+    height: 100vh;
+    background-attachment: fixed; /* Agar background tetap saat scroll */
+    background-size: cover;
+    animation: gradientMove 6s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
